@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <!-- <link rel="" href="./style.css"> -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -11,10 +14,15 @@
   html, body {
     overflow-x: hidden;
   }
+  
+.font-eb-garamond{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+}
 </style>
 
 </head>
-<body class="">
+<body class="font-eb-garamond">
     <header class="max-w-[1170px] mx-auto">
        <nav class="mb-[59px] ">
         <div class="max-w-[1170px] flex justify-between mx-auto items-center mt-[50px] m-auto">
@@ -113,7 +121,7 @@
                <div class="max-w-[1170px] h-[550px] mx-auto rounded-lg relative overflow-hidden">
   
               <!-- background image -->
-             <div class="absolute inset-0 bg-[url('/images/banner.png')] bg-cover bg-center"></div>
+             <div class="absolute inset-0 bg-[url('./images/banner.png')] bg-cover bg-center"></div>
 
             <!-- dark overlay -->
             <div class="absolute inset-0 bg-black/50"></div>
